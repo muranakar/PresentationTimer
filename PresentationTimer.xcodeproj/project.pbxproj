@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F3B8DDFB66C92FCF2E64A28 /* Pods_PresentationTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 464EC3E9DD40BB5FCB7C3FF1 /* Pods_PresentationTimer.framework */; };
+		B26BCBE92A3C303700C779CF /* PresentationTimerSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26BCBE82A3C303700C779CF /* PresentationTimerSetting.swift */; };
+		B26BCBEC2A3C353C00C779CF /* PresentationTimerSettingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26BCBEB2A3C353C00C779CF /* PresentationTimerSettingListView.swift */; };
+		B26BCBEE2A3C387B00C779CF /* TimeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26BCBED2A3C387B00C779CF /* TimeConverter.swift */; };
+		B2A7C8682A3C70F1009FC2D8 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A7C8672A3C70F1009FC2D8 /* MainTabView.swift */; };
+		B2C5F0952A3BBB7500BA496A /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C5F0942A3BBB7500BA496A /* StartButton.swift */; };
+		B2C5F0972A3BBDF500BA496A /* TimerAndBellSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C5F0962A3BBDF500BA496A /* TimerAndBellSound.swift */; };
+		B2C5F09B2A3BF60C00BA496A /* TimerPickerViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C5F09A2A3BF60C00BA496A /* TimerPickerViewModal.swift */; };
+		B2C5F09D2A3C04C500BA496A /* TimerPickerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C5F09C2A3C04C500BA496A /* TimerPickerMode.swift */; };
+		B2DBEED82A3B2D0000100977 /* PresentationTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DBEED72A3B2D0000100977 /* PresentationTimerApp.swift */; };
+		B2DBEEDA2A3B2D0000100977 /* PresentationTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DBEED92A3B2D0000100977 /* PresentationTimerView.swift */; };
+		B2DBEEDC2A3B2D0200100977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DBEEDB2A3B2D0200100977 /* Assets.xcassets */; };
+		B2DBEEDF2A3B2D0200100977 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DBEEDE2A3B2D0200100977 /* Preview Assets.xcassets */; };
+		B2DBEEE62A3B31A900100977 /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B2DBEEE52A3B31A900100977 /* bell.mp3 */; };
+		B2DBEEE82A3B37E000100977 /* bell1.png in Resources */ = {isa = PBXBuildFile; fileRef = B2DBEEE72A3B37E000100977 /* bell1.png */; };
+		B2DBEEEA2A3B384200100977 /* bell2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2DBEEE92A3B384200100977 /* bell2.png */; };
+		B2DBEEEC2A3B468D00100977 /* BellImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DBEEEB2A3B468D00100977 /* BellImage.swift */; };
+		B2DBEEEE2A3B48C700100977 /* FirstBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DBEEED2A3B48C700100977 /* FirstBellView.swift */; };
+		B2DBEEF02A3B4A6500100977 /* SecondBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DBEEEF2A3B4A6500100977 /* SecondBellView.swift */; };
+		B2DBEEF22A3B4AA100100977 /* ThirdBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DBEEF12A3B4AA100100977 /* ThirdBellView.swift */; };
+		B2DBEEF52A3B4B2F00100977 /* RemainTimerText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DBEEF42A3B4B2F00100977 /* RemainTimerText.swift */; };
+		B2DBEEF92A3B4F3A00100977 /* AllBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DBEEF82A3B4F3A00100977 /* AllBellView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07EE68855DD4CD10617C8883 /* Pods-PresentationTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PresentationTimer.release.xcconfig"; path = "Target Support Files/Pods-PresentationTimer/Pods-PresentationTimer.release.xcconfig"; sourceTree = "<group>"; };
+		17390B65177B14AC0A2F066C /* Pods-PresentationTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PresentationTimer.debug.xcconfig"; path = "Target Support Files/Pods-PresentationTimer/Pods-PresentationTimer.debug.xcconfig"; sourceTree = "<group>"; };
+		464EC3E9DD40BB5FCB7C3FF1 /* Pods_PresentationTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PresentationTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26BCBE82A3C303700C779CF /* PresentationTimerSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationTimerSetting.swift; sourceTree = "<group>"; };
+		B26BCBEB2A3C353C00C779CF /* PresentationTimerSettingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationTimerSettingListView.swift; sourceTree = "<group>"; };
+		B26BCBED2A3C387B00C779CF /* TimeConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConverter.swift; sourceTree = "<group>"; };
+		B2A7C8672A3C70F1009FC2D8 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		B2C5F0942A3BBB7500BA496A /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
+		B2C5F0962A3BBDF500BA496A /* TimerAndBellSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAndBellSound.swift; sourceTree = "<group>"; };
+		B2C5F09A2A3BF60C00BA496A /* TimerPickerViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPickerViewModal.swift; sourceTree = "<group>"; };
+		B2C5F09C2A3C04C500BA496A /* TimerPickerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPickerMode.swift; sourceTree = "<group>"; };
+		B2DBEED42A3B2D0000100977 /* PresentationTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PresentationTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2DBEED72A3B2D0000100977 /* PresentationTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationTimerApp.swift; sourceTree = "<group>"; };
+		B2DBEED92A3B2D0000100977 /* PresentationTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationTimerView.swift; sourceTree = "<group>"; };
+		B2DBEEDB2A3B2D0200100977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2DBEEDE2A3B2D0200100977 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B2DBEEE52A3B31A900100977 /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
+		B2DBEEE72A3B37E000100977 /* bell1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell1.png; sourceTree = "<group>"; };
+		B2DBEEE92A3B384200100977 /* bell2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell2.png; sourceTree = "<group>"; };
+		B2DBEEEB2A3B468D00100977 /* BellImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellImage.swift; sourceTree = "<group>"; };
+		B2DBEEED2A3B48C700100977 /* FirstBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstBellView.swift; sourceTree = "<group>"; };
+		B2DBEEEF2A3B4A6500100977 /* SecondBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondBellView.swift; sourceTree = "<group>"; };
+		B2DBEEF12A3B4AA100100977 /* ThirdBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdBellView.swift; sourceTree = "<group>"; };
+		B2DBEEF42A3B4B2F00100977 /* RemainTimerText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainTimerText.swift; sourceTree = "<group>"; };
+		B2DBEEF82A3B4F3A00100977 /* AllBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBellView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2DBEED12A3B2D0000100977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F3B8DDFB66C92FCF2E64A28 /* Pods_PresentationTimer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B26BCBE72A3C302100C779CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B26BCBE82A3C303700C779CF /* PresentationTimerSetting.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B26BCBEA2A3C351200C779CF /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				B26BCBEB2A3C353C00C779CF /* PresentationTimerSettingListView.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		B2C5F0922A3BB0D800BA496A /* TimerView */ = {
+			isa = PBXGroup;
+			children = (
+				B2DBEEF42A3B4B2F00100977 /* RemainTimerText.swift */,
+			);
+			path = TimerView;
+			sourceTree = "<group>";
+		};
+		B2C5F0932A3BBB4C00BA496A /* TimerButton */ = {
+			isa = PBXGroup;
+			children = (
+				B2C5F0942A3BBB7500BA496A /* StartButton.swift */,
+			);
+			path = TimerButton;
+			sourceTree = "<group>";
+		};
+		B2C5F0992A3BF5E800BA496A /* TimerPickerModal */ = {
+			isa = PBXGroup;
+			children = (
+				B2C5F09A2A3BF60C00BA496A /* TimerPickerViewModal.swift */,
+			);
+			path = TimerPickerModal;
+			sourceTree = "<group>";
+		};
+		B2DA9D492A3D0B20005D1DF8 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				B26BCBED2A3C387B00C779CF /* TimeConverter.swift */,
+				B2C5F0962A3BBDF500BA496A /* TimerAndBellSound.swift */,
+				B2C5F09C2A3C04C500BA496A /* TimerPickerMode.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		B2DBEECB2A3B2CFF00100977 = {
+			isa = PBXGroup;
+			children = (
+				B2DBEED62A3B2D0000100977 /* PresentationTimer */,
+				B2DBEED52A3B2D0000100977 /* Products */,
+				E501EC92B984C0145DE8EF5A /* Pods */,
+				ED329D0C3E304E4117F73E18 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B2DBEED52A3B2D0000100977 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2DBEED42A3B2D0000100977 /* PresentationTimer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2DBEED62A3B2D0000100977 /* PresentationTimer */ = {
+			isa = PBXGroup;
+			children = (
+				B2DBEED72A3B2D0000100977 /* PresentationTimerApp.swift */,
+				B2A7C8672A3C70F1009FC2D8 /* MainTabView.swift */,
+				B2DBEED92A3B2D0000100977 /* PresentationTimerView.swift */,
+				B2DA9D492A3D0B20005D1DF8 /* Timer */,
+				B26BCBEA2A3C351200C779CF /* ListView */,
+				B26BCBE72A3C302100C779CF /* Model */,
+				B2DBEEF32A3B4ACD00100977 /* BellView */,
+				B2C5F0992A3BF5E800BA496A /* TimerPickerModal */,
+				B2C5F0922A3BB0D800BA496A /* TimerView */,
+				B2C5F0932A3BBB4C00BA496A /* TimerButton */,
+				B2DBEEE92A3B384200100977 /* bell2.png */,
+				B2DBEEE72A3B37E000100977 /* bell1.png */,
+				B2DBEEE52A3B31A900100977 /* bell.mp3 */,
+				B2DBEEDB2A3B2D0200100977 /* Assets.xcassets */,
+				B2DBEEDD2A3B2D0200100977 /* Preview Content */,
+			);
+			path = PresentationTimer;
+			sourceTree = "<group>";
+		};
+		B2DBEEDD2A3B2D0200100977 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B2DBEEDE2A3B2D0200100977 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B2DBEEF32A3B4ACD00100977 /* BellView */ = {
+			isa = PBXGroup;
+			children = (
+				B2DBEEEB2A3B468D00100977 /* BellImage.swift */,
+				B2DBEEED2A3B48C700100977 /* FirstBellView.swift */,
+				B2DBEEEF2A3B4A6500100977 /* SecondBellView.swift */,
+				B2DBEEF12A3B4AA100100977 /* ThirdBellView.swift */,
+				B2DBEEF82A3B4F3A00100977 /* AllBellView.swift */,
+			);
+			path = BellView;
+			sourceTree = "<group>";
+		};
+		E501EC92B984C0145DE8EF5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17390B65177B14AC0A2F066C /* Pods-PresentationTimer.debug.xcconfig */,
+				07EE68855DD4CD10617C8883 /* Pods-PresentationTimer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ED329D0C3E304E4117F73E18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				464EC3E9DD40BB5FCB7C3FF1 /* Pods_PresentationTimer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2DBEED32A3B2D0000100977 /* PresentationTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2DBEEE22A3B2D0200100977 /* Build configuration list for PBXNativeTarget "PresentationTimer" */;
+			buildPhases = (
+				3CADBF1D4851271A7FAE1BE2 /* [CP] Check Pods Manifest.lock */,
+				B2DBEED02A3B2D0000100977 /* Sources */,
+				B2DBEED12A3B2D0000100977 /* Frameworks */,
+				B2DBEED22A3B2D0000100977 /* Resources */,
+				C305D61F4C4018DFC92D253C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PresentationTimer;
+			productName = PresentationTimer;
+			productReference = B2DBEED42A3B2D0000100977 /* PresentationTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2DBEECC2A3B2CFF00100977 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					B2DBEED32A3B2D0000100977 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = B2DBEECF2A3B2CFF00100977 /* Build configuration list for PBXProject "PresentationTimer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2DBEECB2A3B2CFF00100977;
+			productRefGroup = B2DBEED52A3B2D0000100977 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2DBEED32A3B2D0000100977 /* PresentationTimer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2DBEED22A3B2D0000100977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DBEEEA2A3B384200100977 /* bell2.png in Resources */,
+				B2DBEEDF2A3B2D0200100977 /* Preview Assets.xcassets in Resources */,
+				B2DBEEDC2A3B2D0200100977 /* Assets.xcassets in Resources */,
+				B2DBEEE62A3B31A900100977 /* bell.mp3 in Resources */,
+				B2DBEEE82A3B37E000100977 /* bell1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CADBF1D4851271A7FAE1BE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PresentationTimer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C305D61F4C4018DFC92D253C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PresentationTimer/Pods-PresentationTimer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PresentationTimer/Pods-PresentationTimer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PresentationTimer/Pods-PresentationTimer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2DBEED02A3B2D0000100977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DBEEF52A3B4B2F00100977 /* RemainTimerText.swift in Sources */,
+				B26BCBEC2A3C353C00C779CF /* PresentationTimerSettingListView.swift in Sources */,
+				B2DBEEEE2A3B48C700100977 /* FirstBellView.swift in Sources */,
+				B2A7C8682A3C70F1009FC2D8 /* MainTabView.swift in Sources */,
+				B26BCBEE2A3C387B00C779CF /* TimeConverter.swift in Sources */,
+				B2C5F0972A3BBDF500BA496A /* TimerAndBellSound.swift in Sources */,
+				B2C5F0952A3BBB7500BA496A /* StartButton.swift in Sources */,
+				B2C5F09D2A3C04C500BA496A /* TimerPickerMode.swift in Sources */,
+				B26BCBE92A3C303700C779CF /* PresentationTimerSetting.swift in Sources */,
+				B2DBEEF22A3B4AA100100977 /* ThirdBellView.swift in Sources */,
+				B2C5F09B2A3BF60C00BA496A /* TimerPickerViewModal.swift in Sources */,
+				B2DBEEF02A3B4A6500100977 /* SecondBellView.swift in Sources */,
+				B2DBEEEC2A3B468D00100977 /* BellImage.swift in Sources */,
+				B2DBEEF92A3B4F3A00100977 /* AllBellView.swift in Sources */,
+				B2DBEEDA2A3B2D0000100977 /* PresentationTimerView.swift in Sources */,
+				B2DBEED82A3B2D0000100977 /* PresentationTimerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B2DBEEE02A3B2D0200100977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2DBEEE12A3B2D0200100977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2DBEEE32A3B2D0200100977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17390B65177B14AC0A2F066C /* Pods-PresentationTimer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PresentationTimer/Preview Content\"";
+				DEVELOPMENT_TEAM = DJ7VR35KC8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muranaka.PresentationTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2DBEEE42A3B2D0200100977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07EE68855DD4CD10617C8883 /* Pods-PresentationTimer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PresentationTimer/Preview Content\"";
+				DEVELOPMENT_TEAM = DJ7VR35KC8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muranaka.PresentationTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2DBEECF2A3B2CFF00100977 /* Build configuration list for PBXProject "PresentationTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2DBEEE02A3B2D0200100977 /* Debug */,
+				B2DBEEE12A3B2D0200100977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2DBEEE22A3B2D0200100977 /* Build configuration list for PBXNativeTarget "PresentationTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2DBEEE32A3B2D0200100977 /* Debug */,
+				B2DBEEE42A3B2D0200100977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2DBEECC2A3B2CFF00100977 /* Project object */;
+}
