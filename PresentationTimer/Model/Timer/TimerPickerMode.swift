@@ -24,4 +24,4 @@ enum TimerPickerMode {
             return "ベルが三回鳴る時間"
         }
     }
-    }
+}

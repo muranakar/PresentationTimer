@@ -18,39 +18,36 @@ struct PresentationTimerSettingListView: View {
         _selectedTab = selectedTab
         self.showAlert = showAlert
         _settings = State(initialValue: presentationTimerSettingRepository.loadAtCreated(ascending: true)
-)
+        )
     }
 
     var body: some View {
         NavigationView {
             List {
                 ForEach(settings, id: \.uuidString) { setting in
-                VStack(alignment: .leading) {
-                    Text("プレゼン時間: \(converterTimerTextFromSecond(second:setting.totalTime) )")
-                    Text("一回のベル時間: \(converterTimerTextFromSecond(second:setting.firstSoundTime) )")
-                    Text("二回のベル時間: \(converterTimerTextFromSecond(second:setting.secondSoundTime) )")
-                    Text("三回のベル時間: \(converterTimerTextFromSecond(second:setting.thirdSoundTime) )")
-                    Text("お気に入り: \(setting.isFavorite ? "☆" : "")")
-                }
-                .onTapGesture {
-                    showAlert = true
-                    //アラート表示して、選択している情報をセットするかどうかを尋ねる
-                    //Yesの場合は、プレゼンViewへ画面遷移
-                    //Noの場合は、なにもしない。
-                }
-                .alert(isPresented: $showAlert) {
-                    Alert(title: Text("プレゼン時間の設定"),
-                          message: Text("選択したプレゼン時間を設定しますか？"),
-                          primaryButton: .default(Text("OK")){
-                        selectedTab = 0
-                        print(setting.uuidString)
-                        specifiedPresentationSettingUUIDString = setting.uuidString
-                    },
-                          secondaryButton: .cancel(Text("キャンセル"))
-                    )
+                    VStack(alignment: .leading) {
+                        Text("プレゼン時間: \(converterTimerTextFromSecond(second:setting.totalTime) )")
+                        Text("一回のベル時間: \(converterTimerTextFromSecond(second:setting.firstSoundTime) )")
+                        Text("二回のベル時間: \(converterTimerTextFromSecond(second:setting.secondSoundTime) )")
+                        Text("三回のベル時間: \(converterTimerTextFromSecond(second:setting.thirdSoundTime) )")
+                        Text("お気に入り: \(setting.isFavorite ? "☆" : "")")
+                    }
+                    .onTapGesture {
+                        showAlert = true
+                    }
+                    .alert(isPresented: $showAlert) {
+                        Alert(title: Text("プレゼン時間の設定"),
+                              message: Text("選択したプレゼン時間を設定しますか？"),
+                              primaryButton: .default(Text("OK")){
+                            selectedTab = 0
+                            print(setting.uuidString)
+                            specifiedPresentationSettingUUIDString = setting.uuidString
+                        },
+                              secondaryButton: .cancel(Text("キャンセル"))
+                        )
+                    }
                 }
             }
-        }
             .navigationTitle("Settings")
         }
     }
