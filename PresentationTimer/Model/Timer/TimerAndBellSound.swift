@@ -25,7 +25,6 @@ class TimerAndBellSound: ObservableObject {
     @Published  var secondBellTime = 5
     @Published  var thirdBellTime = 3
 
-
     private var audioPlayer: AVAudioPlayer?
 
     private var timer: Timer?
@@ -58,28 +57,25 @@ class TimerAndBellSound: ObservableObject {
 
     // タイマーを開始する関数
     func startTimer() {
-
-            timerMode = .running
-            timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
-                self.updateTimerAndPlayBell()
-            }
-
+        timerMode = .running
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+            self.updateTimerAndPlayBell()
+        }
     }
 
     // タイマーを停止する関数
     func resetTimer() {
         remainingTime = initialTime
         timerMode = .initial
-            timer?.invalidate()
-            timer = nil
-
+        timer?.invalidate()
+        timer = nil
     }
 
     // タイマーを一時停止する関数
     func pauseTimer() {
         timerMode = .pause
-            timer?.invalidate()
-            timer = nil
+        timer?.invalidate()
+        timer = nil
     }
 
     // ベルの再生を行う関数
@@ -93,7 +89,6 @@ class TimerAndBellSound: ObservableObject {
             audioPlayer?.prepareToPlay()
             audioPlayer?.play()
         } catch {
-
         }
     }
 }

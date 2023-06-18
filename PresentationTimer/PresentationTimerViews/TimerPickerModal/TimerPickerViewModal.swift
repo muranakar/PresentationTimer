@@ -14,7 +14,7 @@ struct TimerPickerViewModal: View {
     @State var selectedSeconds: Int
     @State var presentationSetting: PresentationTimerSetting
 
-    init(timerPickerMode: TimerPickerMode,presentationSetting: PresentationTimerSetting) {
+    init(timerPickerMode: TimerPickerMode, presentationSetting: PresentationTimerSetting) {
         _timerPickerMode = State(initialValue: timerPickerMode)
         var settingTime = 0
         switch timerPickerMode {
@@ -55,7 +55,6 @@ struct TimerPickerViewModal: View {
                 Text("分")
             }
             HStack {
-
                 Picker(selection: $selectedSeconds, label: Text("秒")) {
                     ForEach(0..<60) { second in
                         Text("\(second)")
@@ -77,19 +76,18 @@ struct TimerPickerViewModal: View {
                 case .third:
                     self.presentationSetting.thirdSoundTime = totalSecond
                 }
-            }) {
+            }, label: {
                 Text("設定")
-            }
+            })
         }
         .padding()
         .onAppear() {
-
         }
     }
 }
 
 struct TimerPickerView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerPickerViewModal(timerPickerMode: .first,presentationSetting: PresentationTimerSetting(totalTime: 10, firstSoundTime: 10, secondSoundTime: 10, thirdSoundTime: 10, isFavorite: false, createdAt: Date()))
+        TimerPickerViewModal(timerPickerMode: .first, presentationSetting: PresentationTimerSetting(totalTime: 10, firstSoundTime: 10, secondSoundTime: 10, thirdSoundTime: 10, isFavorite: false, createdAt: Date()))
     }
 }

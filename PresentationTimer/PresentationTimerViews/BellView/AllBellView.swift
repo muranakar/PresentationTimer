@@ -37,9 +37,9 @@ struct AllBellView: View {
 
     func converterTimerTextFromSecond(second: Int) -> String {
         let time = TimeConverter.secondsToHoursMinutes(seconds: second)
-        if time.hour == 0 && time.minute == 0{
+        if time.hour == 0 && time.minute == 0 {
             return "\(time.second)秒"
-        }else if time.hour == 0 {
+        } else if time.hour == 0 {
             return "\(time.minute)分\(time.second)秒"
         } else {
             return "\(time.hour)時間\(time.minute)分\(time.second)秒"

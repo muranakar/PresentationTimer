@@ -10,7 +10,7 @@ import AVFoundation
 struct PresentationTimerView: View {
     @AppStorage("PresentationSettingUUIDString") var specifiedPresentationSettingUUIDString = ""
     @State private var presentationSetting: PresentationTimerSetting?
-    private let presentationTimerSettingRepository:PresentationTimerSettingRepository = PresentationTimerSettingRepository()
+    private let presentationTimerSettingRepository: PresentationTimerSettingRepository = PresentationTimerSettingRepository()
     @State private var isShowingPicker = false
     @State private var timerPickerMode: TimerPickerMode = .first
     @StateObject private var timerManagerAndBellSound = TimerAndBellSound()
@@ -62,15 +62,13 @@ struct PresentationTimerView: View {
                         isShowingPicker = true
                         timerPickerMode = .third
                     })
-                .frame(
-                    width: geometry.size.width - 50 ,
-                    height: geometry.size.height / 4
-                )
-                .sheet(isPresented: $isShowingPicker) {
-                    TimerPickerViewModal(timerPickerMode: timerPickerMode,presentationSetting: presentationSetting!)
-
-                }
-
+                    .frame(
+                        width: geometry.size.width - 50 ,
+                        height: geometry.size.height / 4
+                    )
+                    .sheet(isPresented: $isShowingPicker) {
+                        TimerPickerViewModal(timerPickerMode: timerPickerMode, presentationSetting: presentationSetting!)
+                    }
 
                 if timerManagerAndBellSound.timerMode == .initial {
                     HStack {
@@ -108,17 +106,15 @@ struct PresentationTimerView: View {
                 //                    Alert(title: Text("タイマー終了"), message: nil, dismissButton: .default(Text("OK")))
                 //                }
             }
-            .onChange(of: specifiedPresentationSettingUUIDString) { newValue in
+            .onChange(of: specifiedPresentationSettingUUIDString) { _ in
                 presentationSetting = presentationTimerSettingRepository.load(uuidString: specifiedPresentationSettingUUIDString)
             }
         }
     }
 }
 
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         PresentationTimerView()
     }
 }
-

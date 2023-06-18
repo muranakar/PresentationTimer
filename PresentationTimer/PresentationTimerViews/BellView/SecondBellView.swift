@@ -31,7 +31,6 @@ struct SecondBellView: View {
                     height: geometry.size.height
                 )
             }
-
         }
     }
 }

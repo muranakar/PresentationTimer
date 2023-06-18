@@ -12,7 +12,7 @@ struct BellImage: View {
         Image("bell2")
             .resizable()
             .scaledToFit()
-            .frame(width: 30,height: 30)
+            .frame(width: 30, height: 30)
     }
 }
 

@@ -25,7 +25,7 @@ final class PresentationTimerSettingRepository {
     func loadAtCreated(ascending: Bool) -> [PresentationTimerSetting] {
         let realmTrainingMenus = realm
             .objects(RealmPresentationTimerSetting.self)
-            .sorted(byKeyPath: "createdAt",ascending: !ascending)
+            .sorted(byKeyPath: "createdAt", ascending: !ascending)
         let realmTrainingMenusArray = Array(realmTrainingMenus)
         let trainingMenus = realmTrainingMenusArray.map { PresentationTimerSetting(managedObject: $0) }
         return trainingMenus
@@ -34,7 +34,7 @@ final class PresentationTimerSettingRepository {
     func loadAtUsed(ascending: Bool) -> [PresentationTimerSetting] {
         let realmTrainingMenus = realm
             .objects(RealmPresentationTimerSetting.self)
-            .sorted(byKeyPath: "usedAt",ascending: !ascending)
+            .sorted(byKeyPath: "usedAt", ascending: !ascending)
         let realmTrainingMenusArray = Array(realmTrainingMenus)
         let trainingMenus = realmTrainingMenusArray.map { PresentationTimerSetting(managedObject: $0) }
         return trainingMenus
@@ -61,7 +61,6 @@ final class PresentationTimerSettingRepository {
 
     // 編集
     func update(presentationTimerSetting: PresentationTimerSetting) {
-        // swiftlint:disable:next force_cast
         try! realm.write {
             let realmTrainingMenu = realm.object(ofType: RealmPresentationTimerSetting.self, forPrimaryKey: presentationTimerSetting.uuidString)
             realmTrainingMenu?.totalTime = presentationTimerSetting.totalTime
@@ -79,7 +78,6 @@ final class PresentationTimerSettingRepository {
             ofType: RealmPresentationTimerSetting.self,
             forPrimaryKey: presentationTimerSetting.uuidString
         ) else { return }
-        // swiftlint:disable:next force_cast
         try! realm.write {
             realm.delete(trainingMenu)
         }

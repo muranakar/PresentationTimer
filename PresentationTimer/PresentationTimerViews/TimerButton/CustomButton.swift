@@ -12,11 +12,11 @@ struct CustomButton: View {
     let action: () -> Void
     var body: some View {
         VStack {
-            Button(action:{
+            Button(action: {
                 action()
-            }) {
+            }, label: {
                 Text(text)
-            }
+            })
             .padding()
             .background(Color.blue)
             .foregroundColor(.white)

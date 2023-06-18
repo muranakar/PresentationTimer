@@ -12,7 +12,7 @@
 		B26BCBEC2A3C353C00C779CF /* PresentationTimerSettingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26BCBEB2A3C353C00C779CF /* PresentationTimerSettingListView.swift */; };
 		B26BCBEE2A3C387B00C779CF /* TimeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26BCBED2A3C387B00C779CF /* TimeConverter.swift */; };
 		B2A7C8682A3C70F1009FC2D8 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A7C8672A3C70F1009FC2D8 /* MainTabView.swift */; };
-		B2C5F0952A3BBB7500BA496A /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C5F0942A3BBB7500BA496A /* StartButton.swift */; };
+		B2C5F0952A3BBB7500BA496A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C5F0942A3BBB7500BA496A /* CustomButton.swift */; };
 		B2C5F0972A3BBDF500BA496A /* TimerAndBellSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C5F0962A3BBDF500BA496A /* TimerAndBellSound.swift */; };
 		B2C5F09B2A3BF60C00BA496A /* TimerPickerViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C5F09A2A3BF60C00BA496A /* TimerPickerViewModal.swift */; };
 		B2C5F09D2A3C04C500BA496A /* TimerPickerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C5F09C2A3C04C500BA496A /* TimerPickerMode.swift */; };
@@ -39,7 +39,7 @@
 		B26BCBEB2A3C353C00C779CF /* PresentationTimerSettingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationTimerSettingListView.swift; sourceTree = "<group>"; };
 		B26BCBED2A3C387B00C779CF /* TimeConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConverter.swift; sourceTree = "<group>"; };
 		B2A7C8672A3C70F1009FC2D8 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		B2C5F0942A3BBB7500BA496A /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
+		B2C5F0942A3BBB7500BA496A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		B2C5F0962A3BBDF500BA496A /* TimerAndBellSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAndBellSound.swift; sourceTree = "<group>"; };
 		B2C5F09A2A3BF60C00BA496A /* TimerPickerViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPickerViewModal.swift; sourceTree = "<group>"; };
 		B2C5F09C2A3C04C500BA496A /* TimerPickerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPickerMode.swift; sourceTree = "<group>"; };
@@ -74,6 +74,7 @@
 		B26BCBE72A3C302100C779CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B2DA9D492A3D0B20005D1DF8 /* Timer */,
 				B26BCBE82A3C303700C779CF /* PresentationTimerSetting.swift */,
 			);
 			path = Model;
@@ -98,7 +99,7 @@
 		B2C5F0932A3BBB4C00BA496A /* TimerButton */ = {
 			isa = PBXGroup;
 			children = (
-				B2C5F0942A3BBB7500BA496A /* StartButton.swift */,
+				B2C5F0942A3BBB7500BA496A /* CustomButton.swift */,
 			);
 			path = TimerButton;
 			sourceTree = "<group>";
@@ -109,6 +110,18 @@
 				B2C5F09A2A3BF60C00BA496A /* TimerPickerViewModal.swift */,
 			);
 			path = TimerPickerModal;
+			sourceTree = "<group>";
+		};
+		B2C9D2DC2A3FC04E00EA61DD /* PresentationTimerViews */ = {
+			isa = PBXGroup;
+			children = (
+				B2DBEED92A3B2D0000100977 /* PresentationTimerView.swift */,
+				B2C5F0932A3BBB4C00BA496A /* TimerButton */,
+				B2C5F0922A3BB0D800BA496A /* TimerView */,
+				B2DBEEF32A3B4ACD00100977 /* BellView */,
+				B2C5F0992A3BF5E800BA496A /* TimerPickerModal */,
+			);
+			path = PresentationTimerViews;
 			sourceTree = "<group>";
 		};
 		B2DA9D492A3D0B20005D1DF8 /* Timer */ = {
@@ -144,14 +157,9 @@
 			children = (
 				B2DBEED72A3B2D0000100977 /* PresentationTimerApp.swift */,
 				B2A7C8672A3C70F1009FC2D8 /* MainTabView.swift */,
-				B2DBEED92A3B2D0000100977 /* PresentationTimerView.swift */,
-				B2DA9D492A3D0B20005D1DF8 /* Timer */,
+				B2C9D2DC2A3FC04E00EA61DD /* PresentationTimerViews */,
 				B26BCBEA2A3C351200C779CF /* ListView */,
 				B26BCBE72A3C302100C779CF /* Model */,
-				B2DBEEF32A3B4ACD00100977 /* BellView */,
-				B2C5F0992A3BF5E800BA496A /* TimerPickerModal */,
-				B2C5F0922A3BB0D800BA496A /* TimerView */,
-				B2C5F0932A3BBB4C00BA496A /* TimerButton */,
 				B2DBEEE92A3B384200100977 /* bell2.png */,
 				B2DBEEE72A3B37E000100977 /* bell1.png */,
 				B2DBEEE52A3B31A900100977 /* bell.mp3 */,
@@ -210,6 +218,7 @@
 				B2DBEED12A3B2D0000100977 /* Frameworks */,
 				B2DBEED22A3B2D0000100977 /* Resources */,
 				C305D61F4C4018DFC92D253C /* [CP] Embed Pods Frameworks */,
+				B2C9D2DD2A3FC26B00EA61DD /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -291,6 +300,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B2C9D2DD2A3FC26B00EA61DD /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nif which swiftlint >/dev/null; then\n  swiftlint autocorrect --format # 自動修正の有効化\n  swiftlint\nelse\n  echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		C305D61F4C4018DFC92D253C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -321,7 +349,7 @@
 				B2A7C8682A3C70F1009FC2D8 /* MainTabView.swift in Sources */,
 				B26BCBEE2A3C387B00C779CF /* TimeConverter.swift in Sources */,
 				B2C5F0972A3BBDF500BA496A /* TimerAndBellSound.swift in Sources */,
-				B2C5F0952A3BBB7500BA496A /* StartButton.swift in Sources */,
+				B2C5F0952A3BBB7500BA496A /* CustomButton.swift in Sources */,
 				B2C5F09D2A3C04C500BA496A /* TimerPickerMode.swift in Sources */,
 				B26BCBE92A3C303700C779CF /* PresentationTimerSetting.swift in Sources */,
 				B2DBEEF22A3B4AA100100977 /* ThirdBellView.swift in Sources */,
